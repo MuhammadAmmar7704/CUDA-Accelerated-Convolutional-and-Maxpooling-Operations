@@ -1,0 +1,18 @@
+1. First Compile GenerateInput.c
+using this:
+	gcc -o GenerateInput GenerateInput.c
+	./GenerateInput
+Then use OpenMP:
+	gcc -fopenmp -o serialDynamicMemoryOpenMP serialDynamicMemoryOpenMP.c -lm
+	./serialDynamicMemoryOpenMP
+For Serial:
+	gcc -fopenmp -o serialDM serialDM.c
+	./serialDM
+For CUDA:
+	upload the [ input.txt, kernel1.txt, kernel2.txt, kernel3.txt ] 
+	files to the contents folder in google colab drive.
+	
+	then follow the instructions in .ipynb file.
+
+	
+	
